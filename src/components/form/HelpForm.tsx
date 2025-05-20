@@ -27,6 +27,7 @@ const HelpForm: React.FC = () => {
         setFetchingLocation(false);
       },
       (err) => {
+        console.log("err::::::::::", err);
         setLocationStatus('Unable to fetch location. Please allow permission.');
         setFetchingLocation(false);
       }
